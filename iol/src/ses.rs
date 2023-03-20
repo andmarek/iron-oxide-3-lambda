@@ -9,24 +9,24 @@
  #[derive(Debug, StructOpt)]
 pub struct Opt {
      #[structopt(short, long)]
-     contact_list: String,
+     pub contact_list: String,
  
      #[structopt(short, long)]
-     region: Option<String>,
+     pub region: Option<String>,
  
      #[structopt(short, long)]
-     from_address: String,
+     pub from_address: String,
  
      /// The message of the email.
      #[structopt(short, long)]
-     message: String,
+     pub message: String,
  
      #[structopt(short, long)]
-     subject: String,
+     pub subject: String,
  
      /// Whether to display additional information.
      #[structopt(short, long)]
-     verbose: bool,
+     pub verbose: bool,
  }
  
  // Sends a message to all members of the contact list.
